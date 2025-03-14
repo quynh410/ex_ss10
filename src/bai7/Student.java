@@ -8,23 +8,6 @@ public class Student {
     private double gpa;
 
     public Student(String name, String id, double gpa) {
-        Scanner scanner = new Scanner(System.in);
-
-        while (name == null || name.trim().isEmpty()) {
-            System.out.println("Tên sinh viên không được để trống. Vui lòng nhập lại:");
-            name = scanner.nextLine();
-        }
-
-        while (id == null || id.trim().isEmpty()) {
-            System.out.println("Mã sinh viên không được để trống. Vui lòng nhập lại:");
-            id = scanner.nextLine();
-        }
-
-        while (gpa < 0.0 || gpa > 4.0) {
-            System.out.println("GPA phải nằm trong khoảng 0.0 - 4.0. Vui lòng nhập lại:");
-            gpa = scanner.nextDouble();
-        }
-
         this.name = name;
         this.id = id;
         this.gpa = gpa;
