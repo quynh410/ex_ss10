@@ -32,13 +32,13 @@ public class Car {
     }
 
     public void setYear(int year) {
-        int currentYear = Year.now().getValue();
-        if (year > 1885 && year <= currentYear) {
+        if (year > 2000) {
             this.year = year;
         } else {
-            System.out.println("Năm sản xuất không hợp lệ! Hãy nhập một năm từ 1886 đến " + currentYear);
+            System.out.println("Năm sản xuất không hợp lệ! Hãy nhập một năm lớn hơn .");
         }
     }
+
     public void displayCarInfo() {
         System.out.println("Thương hiệu: " + make);
         System.out.println("Mẫu xe: " + model);
