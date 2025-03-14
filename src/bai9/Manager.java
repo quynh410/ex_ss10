@@ -4,7 +4,6 @@ public class Manager extends Employee {
     private double bonus;
 
     public Manager() {
-        super();
         this.bonus = 0.0;
     }
 

@@ -4,7 +4,6 @@ public class Developer extends Employee {
     private String programmingLanguage;
 
     public Developer() {
-        super();
         this.programmingLanguage = "Unknown";
     }
 
@@ -13,10 +12,6 @@ public class Developer extends Employee {
         this.programmingLanguage = programmingLanguage;
     }
 
-    @Override
-    public double getSalary() {
-        return salary;
-    }
 
     @Override
     public String toString() {
